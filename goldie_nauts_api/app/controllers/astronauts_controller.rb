@@ -1,2 +1,0 @@
-class AstronautsController < ApplicationController
-end
