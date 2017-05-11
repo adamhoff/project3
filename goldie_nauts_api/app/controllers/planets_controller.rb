@@ -5,14 +5,12 @@ class PlanetsController < ApplicationController
     respond_to do |format|
       format.json {render json: @planets}
     end
-
   end
+
   def show
     @planet = Planet.find(params[:id])
     respond_to do |format|
       format.json {render json: @planets}
     end
   end
-
-
 end

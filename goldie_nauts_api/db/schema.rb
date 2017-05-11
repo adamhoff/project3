@@ -15,9 +15,11 @@ ActiveRecord::Schema.define(version: 20170511184328) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "astronauts", force: :cascade do |t|
+  create_table "astros", force: :cascade do |t|
     t.string   "name"
     t.string   "photo_url"
+    t.string   "bio"
+    t.string   "spaceExp"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -28,6 +30,7 @@ ActiveRecord::Schema.define(version: 20170511184328) do
     t.string   "mass"
     t.string   "period"
     t.string   "distance"
+    t.string   "photo_url"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

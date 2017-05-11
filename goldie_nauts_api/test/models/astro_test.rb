@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class AstronautTest < ActiveSupport::TestCase
+class AstroTest < ActiveSupport::TestCase
   # test "the truth" do
   #   assert true
   # end
