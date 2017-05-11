@@ -8,7 +8,7 @@ class AstrosController < ApplicationController
   def show
     @astro = Astro.find(params[:id])
     respond_to do |format|
-      format.json {render json: @astros}
+      format.json {render json: @astro}
     end
   end
 end
