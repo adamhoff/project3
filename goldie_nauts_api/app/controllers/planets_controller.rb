@@ -10,7 +10,7 @@ class PlanetsController < ApplicationController
   def show
     @planet = Planet.find(params[:id])
     respond_to do |format|
-      format.json {render json: @planets}
+      format.json {render json: @planet}
     end
   end
 end
