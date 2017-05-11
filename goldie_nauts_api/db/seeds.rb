@@ -6,7 +6,7 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 Planet.destroy_all
-Astronaut.destroy_all
+Astro.destroy_all
 
 
 planet1 = Planet.create({
