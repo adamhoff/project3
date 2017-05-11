@@ -17,8 +17,8 @@ ActiveRecord::Schema.define(version: 20170511184328) do
 
   create_table "astros", force: :cascade do |t|
     t.string   "name"
-    t.string   "bio"
     t.string   "photo_url"
+    t.string   "bio"
     t.string   "spaceExp"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
