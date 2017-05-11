@@ -4,8 +4,6 @@ class CreatePlanets < ActiveRecord::Migration[5.0]
       t.string :name
       t.string :star
       t.string :mass
-      t.string :radius
-      t.string :flux
       t.string :period
       t.string :distance
 
