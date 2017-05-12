@@ -15,48 +15,62 @@ planet1 = Planet.create({
   mass: "1.00x mass of Earth",
   period: "365.24 days per year",
   distance: "-",
-  photo_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/The_Earth_seen_from_Apollo_17.jpg/520px-The_Earth_seen_from_Apollo_17.jpg"
+  photo_url: "https://photos-5.dropbox.com/t/2/AADnUpiAsOyzQf8pTNxzkAwHY0smQ5ILl7rD289G5BMfmQ/12/670704219/png/32x32/1/_/1/2/earth.png/EMr3sr0FGAcgAigC/xNYMqZ--Ni7-mQ2a-bL3y9-78ZehKsGMO7RUaxflIPk%2CO5cHhMB6_BiE3_H9osuJGeOW0hwkAS5dbEZkU2y7fng%2Cgx80eicQ6Ap-5zJTsCSMs-w2H1EjrVBj3j9twRv4TWQ?size=2048x1536&size_mode=3",
+  about: "Earth, otherwise known as the World or the Globe, is the third planet from the Sun and the only object in the Universe known to harbor life. It is the densest planet in the Solar System and the largest of the four terrestrial planets.",
+  more: "Earth's lithosphere is divided into several rigid tectonic plates that migrate across the surface over periods of many millions of years. About 71% of Earth's surface is covered with water, mostly by its oceans. The remaining 29% is land consisting of continents and islands that together have many lakes, rivers and other sources of water that contribute to the hydrosphere. The majority of Earth's polar regions are covered in ice, including the Antarctic ice sheet and the sea ice of the Arctic ice pack. Earth's interior remains active with a solid iron inner core, a liquid outer core that generates the Earth's magnetic field, and a convecting mantle that drives plate tectonics."
   })
+
 planet2 = Planet.create({
     name: "Proxima Centauri b",
     star: "Proxima Centauri",
     mass: "1.30x mass of Earth",
     period: "11.186 days per year",
     distance: "4.22 Lightyears",
-    photo_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Artist%E2%80%99s_impression_of_Proxima_Centauri_b_shown_hypothetically_as_an_arid_rocky_super-earth.jpg/600px-Artist%E2%80%99s_impression_of_Proxima_Centauri_b_shown_hypothetically_as_an_arid_rocky_super-earth.jpg"
+    photo_url: "https://photos-6.dropbox.com/t/2/AAB3OHdob_roiS-1XR4_aavAwDpqBYqCOqRDn0T4nJbBtg/12/670704219/png/32x32/1/_/1/2/proxima_b.png/EMr3sr0FGAcgAigC/0u2SJS9V3QA-QU50YG4wilYu4zweXe5klaHQPGNBkYY?size=2048x1536&size_mode=3",
+    about: "Proxima Centauri b (also called Proxima b or Alpha Centauri Cb) is an exoplanet orbiting within the habitable zone of the closest star to the Sun—the red dwarf star Proxima Centauri, which is in a triple star system. It is located about 4.2 light-years (25 trillion miles) from Earth in the constellation of Centaurus, making it the closest known exoplanet to the Solar System.",
+    more: "Its habitability has not yet been established, though it is unlikely to be habitable since the planet is subject to stellar wind pressures of more than 2,000 times those experienced by Earth from the solar wind. However its proximity to Earth offers an opportunity for robotic exploration of the planet with the Starshot project."
   })
-planet3 = Planet.create({
+  planet3 = Planet.create({
+      name: "Wolf 1061c",
+      star: "Wolf 1061",
+      mass: "4.30x mass of Earth",
+      period: "17.9 days per year",
+      distance: "13.8 Lightyears",
+      photo_url: "https://photos-6.dropbox.com/t/2/AAARbRpYZK1U1FpeIcTLHGk6bk73GF2eYZDZlW3qT3nPHA/12/670704219/png/32x32/1/_/1/2/wolf-1061.png/EMr3sr0FGAcgAigC/VQmEEZuL1szJYFz2lrCHP4njW6iv0zh2_mI63oXivKQ?size=2048x1536&size_mode=3",
+      about: "Wolf 1061c or WL 1061c is an exoplanet orbiting within the habitable zone of the red dwarf star Wolf 1061 in the constellation Ophiuchus, about 13.8 light years from Earth, making it the second-closest known potentially habitable exoplanet to Earth, after Proxima Centauri b. It is the second planet in order from its host star in a triple planetary system, and has an orbital period of 17.9 days. Wolf 1061c is classified as a super-Earth exoplanet.",
+      more: "Because it is so close to the star, it is likely to be tidally locked, meaning one side permanently faces the star and the other side permanently faces away. Although this scenario could result in extreme temperature differences on the planet, the terminator line that separates the illuminated side and the dark side could potentially be habitable, as the temperature there could be suitable for liquid water to exist. Additionally, a much larger portion of the planet could also be habitable if it has a thick enough atmosphere to facilitate heat transfer away from the side facing the star."
+    })
+planet4 = Planet.create({
     name: "Gliese 667 Cc",
     star: "Gliese 667 C",
     mass: "3.80x mass of Earth",
     period: "28.143 days per year",
     distance: "23.62 Lightyears",
-    photo_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Gliese_667_Cc_sunset.jpg/600px-Gliese_667_Cc_sunset.jpg"
+    photo_url: "https://photos-5.dropbox.com/t/2/AAAgTxj6FCWdRmK-JRkfub1gHX4XzpJI6LpF9_cGV13CoQ/12/670704219/png/32x32/1/_/1/2/Gliese.png/EMr3sr0FGAcgAigC/3y0npVkLEBzV4RvqPmTNr5hCHcs1tppv5oWTUV22fbI?size=2048x1536&size_mode=3",
+    about: "Gliese 667 Cc is an exoplanet orbiting within the habitable zone of the red dwarf star Gliese 667 C, which is a member of the Gliese 667 triple star system, approximately 23.62 light-years away in the constellation of Scorpius.",
+    more: "The planet is likely tidally locked, with one side of its hemisphere permanently facing towards the star, while the opposite side shrouded in eternal darkness. However, between these two intense areas, there would be a sliver of habitability. In a 2015 essay, it was revealed that Gliese 667 Cc is subject to tidal heating 300 times that of Earth. This in part is due to its small eccentric orbit around the host star. Because of this, the chances of habitability may be lower than originally estimated."
   })
-planet4 = Planet.create({
+planet5 = Planet.create({
     name: "Kepler-186f",
     star: "Kepler-186",
     mass: "4.70x mass of Earth",
     period: "129.9459 days per year",
     distance: "561 Lightyears",
-    photo_url: "https://i.ytimg.com/vi/P41yiocB0F8/maxresdefault.jpg"
+    photo_url: "https://photos-3.dropbox.com/t/2/AABYwF9NkCMp5VAIahfYPqUH8WRPm9Sue4LfklV6bBEo6A/12/670704219/png/32x32/1/_/1/2/keppler-186.png/EMr3sr0FGAcgAigC/8Mk65sIdUSp9evv6G7xsqh8xfdHm9u9GTvnVfYEqQEs%2CgDlh0SnS4R2_nwG5EU1niyjq8OlB4sssuaWJ7biyATQ?size=2048x1536&size_mode=3",
+    about: "Kepler-186f is the first planet with a radius similar to Earth's to be discovered in the habitable zone of another star. NASA's Kepler spacecraft detected it using the transit method, along with four additional planets orbiting much closer to the star (all modestly larger than Earth). Analysis of three years of data was required to find its signal. The results were presented initially at a conference on 19 March 2014and some details were reported in the media at the time.",
+    more: "Recent results have placed the age of Kepler-186f at around 4 billion years. The chance that it is tidally locked is approximately 50%. Since it is closer to its star than Earth is to the Sun, it will probably rotate much more slowly than Earth; its day could be weeks or months long."
   })
-planet5 = Planet.create({
+planet6 = Planet.create({
     name: "Kepler-442b",
     star: "Kepler-442",
     mass: "8.20x mass of Earth",
     period: "112.30 days per year",
     distance: "1291.6 Lightyears",
-    photo_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Kepler442b%28comp%29.jpg/600px-Kepler442b%28comp%29.jpg"
+    photo_url: "https://photos-5.dropbox.com/t/2/AADSCKWFF6BAjJwqBCUwMBAmyMIKZL8vxKspzVVaEoBBNw/12/670704219/png/32x32/1/_/1/2/keppler-442.png/EMr3sr0FGAcgAigC/OpDYwhDxgyCSv2fLAGScn7TJHqENqnKjEU4IqjYe2mE?size=2048x1536&size_mode=3",
+    about: "Kepler-442b is a confirmed near-Earth-sized exoplanet, likely rocky. The planet was discovered by NASA's Kepler spacecraft using the transit method, in which the dimming effect that a planet causes as it crosses in front of its star is measured. NASA announced the confirmation of the exoplanet on 6 January 2015.",
+    more: "It was described as being one of the most Earth-like planets, in terms of size and temperature, yet found. It is outside of the zone where tidal forces from its host star would be enough to tidally lock it."
   })
-planet6 = Planet.create({
-    name: "Wolf 1061c",
-    star: "Wolf 1061",
-    mass: "4.30x mass of Earth",
-    period: "17.9 days per year",
-    distance: "13.8 Lightyears",
-    photo_url: "http://cdn.sci-news.com/images/enlarge2/image_3520_1e-Wolf-1061c.jpg"
-  })
+
 
   astro1 = Astro.create({
   	name: "Joseph M. Acaba",
