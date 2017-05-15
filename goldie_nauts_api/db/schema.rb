@@ -28,6 +28,7 @@ ActiveRecord::Schema.define(version: 20170511184328) do
     t.string   "name"
     t.string   "star"
     t.string   "mass"
+    t.string   "diameter"
     t.string   "period"
     t.string   "distance"
     t.string   "photo_url"
