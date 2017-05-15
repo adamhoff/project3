@@ -31,6 +31,8 @@ ActiveRecord::Schema.define(version: 20170511184328) do
     t.string   "period"
     t.string   "distance"
     t.string   "photo_url"
+    t.string   "about"
+    t.string   "more"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

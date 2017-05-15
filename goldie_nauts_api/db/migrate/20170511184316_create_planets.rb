@@ -7,7 +7,8 @@ class CreatePlanets < ActiveRecord::Migration[5.0]
       t.string :period
       t.string :distance
       t.string :photo_url
-
+      t.string :about
+      t.string :more
       t.timestamps
     end
   end
