@@ -9,66 +9,94 @@ Planet.destroy_all
 Astro.destroy_all
 
 
-planet1 = Planet.create({
-  name: "Earth",
+mercury = Planet.create({
+  name: "Mercury",
   star: "Sun",
-  mass: "1.00x mass of Earth",
-  period: "365.24 days per year",
-  distance: "-",
-  photo_url: "http://imgur.com/jCZBrzy.png",
-  about: "Earth, otherwise known as the World or the Globe, is the third planet from the Sun and the only object in the Universe known to harbor life. It is the densest planet in the Solar System and the largest of the four terrestrial planets.",
-  more: "Earth's lithosphere is divided into several rigid tectonic plates that migrate across the surface over periods of many millions of years. About 71% of Earth's surface is covered with water, mostly by its oceans. The remaining 29% is land consisting of continents and islands that together have many lakes, rivers and other sources of water that contribute to the hydrosphere. The majority of Earth's polar regions are covered in ice, including the Antarctic ice sheet and the sea ice of the Arctic ice pack. Earth's interior remains active with a solid iron inner core, a liquid outer core that generates the Earth's magnetic field, and a convecting mantle that drives plate tectonics."
+  mass: "0.055x mass of Earth",
+  diameter: "3,032 miles",
+  period: "88 Earth days per 1 Mercury year",
+  distance: "35.98 million miles from Sun",
+  photo_url: "http://space-facts.com/wp-content/uploads/mercury.png",
+  about: "Mercury is the smallest and innermost planet in the Solar System. Its orbital period around the Sun of 88 days is the shortest of all the planets in the Solar System. It is named after the Roman deity Mercury, the messenger to the gods.",
+  more: "Mercury is tidally or gravitationally locked with the Sun in a 3:2 resonance,[15] and rotates in a way that is unique in the Solar System. As seen relative to the fixed stars, it rotates on its axis exactly three times for every two revolutions it makes around the Sun.[a][16] As seen from the Sun, in a frame of reference that rotates with the orbital motion, it appears to rotate only once every two Mercurian years. An observer on Mercury would therefore see only one day every two years."
   })
 
-planet2 = Planet.create({
-    name: "Proxima Centauri b",
-    star: "Proxima Centauri",
-    mass: "1.30x mass of Earth",
-    period: "11.186 days per year",
-    distance: "4.22 Lightyears",
-    photo_url: "http://imgur.com/euiM4Ml.png",
-    about: "Proxima Centauri b (also called Proxima b or Alpha Centauri Cb) is an exoplanet orbiting within the habitable zone of the closest star to the Sun—the red dwarf star Proxima Centauri, which is in a triple star system. It is located about 4.2 light-years (25 trillion miles) from Earth in the constellation of Centaurus, making it the closest known exoplanet to the Solar System.",
-    more: "Its habitability has not yet been established, though it is unlikely to be habitable since the planet is subject to stellar wind pressures of more than 2,000 times those experienced by Earth from the solar wind. However its proximity to Earth offers an opportunity for robotic exploration of the planet with the Starshot project."
+venus = Planet.create({
+    name: "Venus",
+    star: "Sun",
+    mass: "0.815x mass of Earth",
+    diameter: "7,520.8 miles",
+    period: "224.7 Earth days per 1 Venus year",
+    distance: "67.24 million miles from Sun",
+    photo_url: "http://space-facts.com/wp-content/uploads/venus.png",
+    about: "Venus is the second planet from the Sun, orbiting it every 224.7 Earth days. It has the longest rotation period (243 days) of any planet in the Solar System and rotates in the opposite direction to most other planets. It has no natural satellite. It is named after the Roman goddess of love and beauty. It is the second-brightest natural object in the night sky after the Moon, reaching an apparent magnitude of −4.6, bright enough to cast shadows at night and, though rare, occasionally be visible in broad daylight. ",
+    more: "As one of the brightest objects in the sky, Venus has been a major fixture in human culture for as long as records have existed. It has been made sacred to gods of many cultures, and has been a prime inspiration for writers and poets as the \"morning star\" and \"evening star\". Venus was the first planet to have its motions plotted across the sky, as early as the second millennium BC. As the closest planet to Earth, Venus has been a prime target for early interplanetary exploration. It was the first planet beyond Earth visited by a spacecraft and the first to be successfully landed on. Venus's thick clouds render observation of its surface impossible in visible light, and the first detailed maps did not emerge until the arrival of the Magellan orbiter in 1991. Plans have been proposed for rovers or more complex missions, but they are hindered by Venus's hostile surface conditions."
   })
-  planet3 = Planet.create({
-      name: "Wolf 1061c",
-      star: "Wolf 1061",
-      mass: "4.30x mass of Earth",
-      period: "17.9 days per year",
-      distance: "13.8 Lightyears",
-      photo_url: "http://imgur.com/8dbD9lT.png",
-      about: "Wolf 1061c or WL 1061c is an exoplanet orbiting within the habitable zone of the red dwarf star Wolf 1061 in the constellation Ophiuchus, about 13.8 light years from Earth, making it the second-closest known potentially habitable exoplanet to Earth, after Proxima Centauri b. It is the second planet in order from its host star in a triple planetary system, and has an orbital period of 17.9 days. Wolf 1061c is classified as a super-Earth exoplanet.",
-      more: "Because it is so close to the star, it is likely to be tidally locked, meaning one side permanently faces the star and the other side permanently faces away. Although this scenario could result in extreme temperature differences on the planet, the terminator line that separates the illuminated side and the dark side could potentially be habitable, as the temperature there could be suitable for liquid water to exist. Additionally, a much larger portion of the planet could also be habitable if it has a thick enough atmosphere to facilitate heat transfer away from the side facing the star."
+  earth = Planet.create({
+      name: "Earth",
+      star: "Sun",
+      mass: "(5.9722±0.0006)×10^24 kg",
+      diameter: "7,9175 miles",
+      period: "365.24 days per year",
+      distance: "-",
+      photo_url: "http://space-facts.com/wp-content/uploads/earth.png",
+      about: "Earth, otherwise known as the World or the Globe, is the third planet from the Sun and the only object in the Universe known to harbor life. It is the densest planet in the Solar System and the largest of the four terrestrial planets.",
+      more: "Earth's lithosphere is divided into several rigid tectonic plates that migrate across the surface over periods of many millions of years. About 71% of Earth's surface is covered with water, mostly by its oceans. The remaining 29% is land consisting of continents and islands that together have many lakes, rivers and other sources of water that contribute to the hydrosphere. The majority of Earth's polar regions are covered in ice, including the Antarctic ice sheet and the sea ice of the Arctic ice pack. Earth's interior remains active with a solid iron inner core, a liquid outer core that generates the Earth's magnetic field, and a convecting mantle that drives plate tectonics."
     })
-planet4 = Planet.create({
-    name: "Gliese 667 Cc",
-    star: "Gliese 667 C",
-    mass: "3.80x mass of Earth",
-    period: "28.143 days per year",
-    distance: "23.62 Lightyears",
-    photo_url: "http://imgur.com/68hj37b.png",
-    about: "Gliese 667 Cc is an exoplanet orbiting within the habitable zone of the red dwarf star Gliese 667 C, which is a member of the Gliese 667 triple star system, approximately 23.62 light-years away in the constellation of Scorpius.",
-    more: "The planet is likely tidally locked, with one side of its hemisphere permanently facing towards the star, while the opposite side shrouded in eternal darkness. However, between these two intense areas, there would be a sliver of habitability. In a 2015 essay, it was revealed that Gliese 667 Cc is subject to tidal heating 300 times that of Earth. This in part is due to its small eccentric orbit around the host star. Because of this, the chances of habitability may be lower than originally estimated."
+mars = Planet.create({
+    name: "Mars",
+    star: "Sun",
+    mass: "0.107x mass of Earth",
+    diameter: "4,212 miles",
+    period: "687 Earth days per 1 Mars year",
+    distance: "141.6 million miles",
+    photo_url: "http://space-facts.com/wp-content/uploads/mars-transparent.png",
+    about: "Mars is the fourth planet from the Sun and the second-smallest planet in the Solar System, after Mercury. Named after the Roman god of war, it is often referred to as the \"Red Planet\" because the iron oxide prevalent on its surface gives it a reddish appearance. Mars is a terrestrial planet with a thin atmosphere, having surface features reminiscent both of the impact craters of the Moon and the valleys, deserts, and polar ice caps of Earth.",
+    more: "The current understanding of planetary habitability—the ability of a world to develop environmental conditions favorable to the emergence of life—favors planets that have liquid water on their surface. Most often this requires the orbit of a planet to lie within the habitable zone, which for the Sun extends from just beyond Venus to about the semi-major axis of Mars. During perihelion, Mars dips inside this region, but Mars's thin (low-pressure) atmosphere prevents liquid water from existing over large regions for extended periods. The past flow of liquid water demonstrates the planet's potential for habitability. Recent evidence has suggested that any water on the Martian surface may have been too salty and acidic to support regular terrestrial life. Evidence suggests that the planet was once significantly more habitable than it is today, but whether living organisms ever existed there remains unknown."
   })
-planet5 = Planet.create({
-    name: "Kepler-186f",
-    star: "Kepler-186",
-    mass: "4.70x mass of Earth",
-    period: "129.9459 days per year",
-    distance: "561 Lightyears",
-    photo_url: "http://imgur.com/IALsavf.png",
-    about: "Kepler-186f is the first planet with a radius similar to Earth's to be discovered in the habitable zone of another star. NASA's Kepler spacecraft detected it using the transit method, along with four additional planets orbiting much closer to the star (all modestly larger than Earth). Analysis of three years of data was required to find its signal. The results were presented initially at a conference on 19 March 2014and some details were reported in the media at the time.",
-    more: "Recent results have placed the age of Kepler-186f at around 4 billion years. The chance that it is tidally locked is approximately 50%. Since it is closer to its star than Earth is to the Sun, it will probably rotate much more slowly than Earth; its day could be weeks or months long."
+jupiter = Planet.create({
+    name: "Jupiter",
+    star: "Sun",
+    mass: "317.8x mass of Earth",
+    diameter: "86,881.4 miles",
+    period: "11.86 Earth years per 1 Jupiter year",
+    distance: "483.8 million miles from Sun",
+    photo_url: "http://freepngimages.com/wp-content/uploads/2016/04/planet-jupiter-1.png",
+    about: "Jupiter is the fifth planet from the Sun and the largest in the Solar System. It is a giant planet with a mass one-thousandth that of the Sun, but two and a half times that of all the other planets in the Solar System combined. Jupiter and Saturn are gas giants; the other two giant planets, Uranus and Neptune are ice giants. Jupiter has been known to astronomers since antiquity. The Romans named it after their god Jupiter. When viewed from Earth, Jupiter can reach an apparent magnitude of −2.94, bright enough for its reflected light to cast shadows, and making it on average the third-brightest object in the night sky after the Moon and Venus.",
+    more: "Jupiter has been explored on several occasions by robotic spacecraft, most notably during the early Pioneer and Voyager flyby missions and later by the Galileo orbiter. In late February 2007, Jupiter was visited by the New Horizons probe, which used Jupiter's gravity to increase its speed and bend its trajectory en route to Pluto. The latest probe to visit the planet is Juno, which entered into orbit around Jupiter on July 4, 2016. Future targets for exploration in the Jupiter system include the probable ice-covered liquid ocean of its moon Europa."
   })
-planet6 = Planet.create({
-    name: "Kepler-442b",
-    star: "Kepler-442",
-    mass: "8.20x mass of Earth",
-    period: "112.30 days per year",
-    distance: "1291.6 Lightyears",
-    photo_url: "http://imgur.com/tsjuUGM.png",
-    about: "Kepler-442b is a confirmed near-Earth-sized exoplanet, likely rocky. The planet was discovered by NASA's Kepler spacecraft using the transit method, in which the dimming effect that a planet causes as it crosses in front of its star is measured. NASA announced the confirmation of the exoplanet on 6 January 2015.",
-    more: "It was described as being one of the most Earth-like planets, in terms of size and temperature, yet found. It is outside of the zone where tidal forces from its host star would be enough to tidally lock it."
+saturn = Planet.create({
+    name: "Saturn",
+    star: "Sun",
+    mass: "95.159x mass of Earth",
+    diameter: "72,367.4 mi",
+    period: "29.5 Earth years per 1 Saturn year",
+    distance: "888.2 million miles from Sun",
+    photo_url: "http://space-facts.com/wp-content/uploads/saturn-transparent.png",
+    about: "Saturn is the sixth planet from the Sun and the second-largest in the Solar System, after Jupiter. It is a gas giant with an average radius about nine times that of Earth. Although it has only one-eighth the average density of Earth, with its larger volume Saturn is just over 95 times more massive. Saturn is named after the Roman god of agriculture; its astronomical symbol represents the god's sickle.",
+    more: "Saturn has a prominent ring system that consists of nine continuous main rings and three discontinuous arcs and that is composed mostly of ice particles with a smaller amount of rocky debris and dust. Sixty-two moons are known to orbit Saturn, of which fifty-three are officially named. This does not include the hundreds of moonlets comprising the rings. Titan, Saturn's largest moon, and the second-largest in the Solar System, is larger than the planet Mercury, although less massive, and is the only moon in the Solar System to have a substantial atmosphere."
+  })
+  uranus = Planet.create({
+    name: "Uranus",
+    star: "Sun",
+    mass: "14.536x mass of Earth",
+    diameter: "31,518 miles",
+    period: "84 Earth years per 1 Uranus year",
+    distance: "1.784 billion miles from Sun",
+    photo_url: "http://space-facts.com/wp-content/uploads/uranus-transparent.png",
+    about: "Uranus is the seventh planet from the Sun. It has the third-largest planetary radius and fourth-largest planetary mass in the Solar System. Uranus is similar in composition to Neptune, and both have different bulk chemical composition from that of the larger gas giants Jupiter and Saturn. For this reason, scientists often classify Uranus and Neptune as \"ice giants\" to distinguish them from the gas giants. Uranus's atmosphere is similar to Jupiter's and Saturn's in its primary composition of hydrogen and helium, but it contains more \"ices\" such as water, ammonia, and methane, along with traces of other hydrocarbons. It is the coldest planetary atmosphere in the Solar System, with a minimum temperature of 49 K(−371 °F), and has a complex, layered cloud structure with water thought to make up the lowest clouds and methane the uppermost layer of clouds. The interior of Uranus is mainly composed of ices and rock.",
+    more: "Uranus is the only planet whose name is derived from a figure from Greek mythology, from the Latinised version of the Greek god of the sky Ouranos. Like the other giant planets, Uranus has a ring system, a magnetosphere, and numerous moons. The Uranian system has a unique configuration among those of the planets because its axis of rotation is tilted sideways, nearly into the plane of its solar orbit. Its north and south poles, therefore, lie where most other planets have their equators. In 1986, images from Voyager 2 showed Uranus as an almost featureless planet in visible light, without the cloud bands or storms associated with the other giant planets. Observations from Earth have shown seasonal change and increased weather activity as Uranus approached its equinox in 2007. Wind speeds can reach 250 metres per second (560 mph)."
+  })
+  neptune = Planet.create({
+    name: "Neptune",
+    star: "Sun",
+    mass: "17.147x mass of Earth",
+    diameter: "30,599 miles",
+    period: "164.8 Earth years per 1 Neptune year",
+    distance: "2.795 billion miles from Sun",
+    photo_url: "http://space-facts.com/wp-content/uploads/neptune-transparent.png",
+    about: "Neptune is the eighth and farthest known planet from the Sun in the Solar System. In the Solar System, it is the fourth-largest planet by diameter, the third-most-massive planet, and the densest giant planet. Neptune is 17 times the mass of Earth and is slightly more massive than its near-twin Uranus, which is 15 times the mass of Earth and slightly larger than Neptune. It is named after the Roman god of the sea and has the astronomical symbol ♆, a stylised version of the god Neptune's trident.",
+    more: "In contrast to the hazy, relatively featureless atmosphere of Uranus, Neptune's atmosphere has active and visible weather patterns. For example, at the time of the Voyager 2 flyby in 1989, the planet's southern hemisphere had a Great Dark Spot comparable to the Great Red Spot on Jupiter. These weather patterns are driven by the strongest sustained winds of any planet in the Solar System, with recorded wind speeds as high as 1,300 miles per hour. Because of its great distance from the Sun, Neptune's outer atmosphere is one of the coldest places in the Solar System, with temperatures at its cloud tops approaching 55 K (−218 °C). Temperatures at the planet's centre are approximately 5,400 K (5,100 °C). Neptune has a faint and fragmented ring system (labelled \"arcs\"), which was first detected during the 1960s and confirmed by Voyager 2."
   })
 
 
