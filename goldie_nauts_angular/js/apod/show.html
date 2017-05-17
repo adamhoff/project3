@@ -1,0 +1,36 @@
+<div class="apodBackground">
+  <img id="death_star" src="/background/death_star.png">
+  <div class="apodContainer">
+    <div class="titleContainer">
+      <h1 class="apodMainTitle">Astronomy Picture of the Day</h1>
+      <h2 class="apodTitle"> "{{vm.apod.title}}"</h2>
+      <h3 class="apodDate"> ({{vm.apod.date}})</h3>
+    </div>
+
+
+      <div class="searchBar">
+        <datepicker  date-format="yyyy-MM-dd">
+        <input class="apodButton"  placeholder="Select previous APOD" ng-model="vm.newDate" type="text"/>
+        <button class="apodButton" ng-click="vm.getNewDate()">Enter</button>
+        </datepicker>
+      </div>
+
+      <div ng-if= "vm.apod.media_type == 'video'">
+        <iframe width="560" height="315" ng-src="{{vm.apod.url | trusted}}"
+        frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="apodPicContainer" ng-if= "vm.apod.media_type != 'video'">
+        <img class= "apodPic" ng-src="{{vm.apod.url}}" />
+      </div>
+
+      <div ng-if= "vm.apod.hdurl != null ">
+        <button class="apodButton"><a data-ui-sref="apodPicFull({pic_date: vm.apod.date})" />View Full Size Picture</a></button>
+      </div>
+
+      <p class="apodContent"> {{vm.apod.explanation}}</p>
+      <div ng-if= "vm.apod.copyright != null ">
+        </br>
+        <div> *Image Credit & Copyright: {{vm.apod.copyright}}</div>
+      </div>
+  </div>
+</div>

@@ -10,7 +10,7 @@ body {
   text-align: center;
   color: white;
   font-size: 25px;
-  top: 570px;
+  top: 130px;
   right: 30px;
 }
 
@@ -29,8 +29,8 @@ body {
 #bb8 {
   position: absolute;
   width: 100px;
-  top: 560px;
-  right: 100px;
+  top: 110px;
+  right: 90px;
 }
 
 .mainIndexBody {
@@ -59,9 +59,13 @@ a {
   text-align: center;
 }
 
+.textImdageCon{
+    position: relative;
+    transition: 0.3s linear;
+}
+
 .title {
   margin-top: 100px;
-  color: white;
   text-align: center;
   font-size: 60px;
   transition: all 0.2s linear;
@@ -71,8 +75,28 @@ a {
   display: inline-block;
 }
 
-.title:hover {
+#titleImage{
+  width:50px;
+  transition: 4s linear;
+  position: absolute;
+  left: -35px;
+  top: -40px;
+  transform: rotate(-50deg);
+}
+#titleImage2{
+    width:20px;
+    position: absolute;
+    border-radius: 100px;
+    left: 188px;
+    top: -53px;
+}
+
+.textImdageCon:hover  {
   filter: drop-shadow(1px 3px 5px gold);
+}
+.textImdageCon:hover #titleImage {
+  transform: translate(500px, -50px);
+  width: 110px;
 }
 
 .indexImageContainer {
@@ -80,10 +104,15 @@ a {
   min-width: 200px;
 }
 
-#astroMainIndex, #planetMainIndex {
+#astroMainIndex, #planetMainIndex, #apodMainIndex {
   width: 0px;
   transition: 0.5s ease-in;
   opacity: 0;
+}
+
+#apodMainIndex{
+  border-radius: 80px;
+  margin-top: 30px;
 }
 
 #astroMainIndex:hover~.indexName {
@@ -91,6 +120,10 @@ a {
 }
 
 #planetMainIndex:hover+.indexName {
+  visibility: visible;
+}
+
+#apodMainIndex:hover+.indexName {
   visibility: visible;
 }
 
