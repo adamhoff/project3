@@ -1,9 +1,10 @@
 $(function() {
  console.log(window.location.href)
   //Resize the background and title of th main index page
-  if (window.location.pathname === "/project3/" || window.location.pathname === "/project3") {
+  if (window.location.pathname == "/project3/" || window.location.pathname === "/project3") {
     $(".mainIndexBody").css({
-      height: "100vh"
+      height: "100vh",
+      "display": "flex"
     });
     $(".title").css({
       "margin-top": "100px"
@@ -11,7 +12,7 @@ $(function() {
   } else {
     $(".mainIndexBody").css({
       height: "110px",
-      display: "block"
+      "display": "block"
     });
     $(".title").css({
       "margin-top": "10px"
@@ -44,7 +45,7 @@ $(function() {
     }, "slow");
     $(".mainIndexBody").css({
       height: "100vh",
-      // display: "flex"
+      "display": "flex"
     });
     $(".title").css({
       "margin-top": "100px"
@@ -127,7 +128,7 @@ $(function() {
       });
       $(".mainIndexBody").css({
         height: "110px",
-        display: "block"
+        "display": "block"
       });
       $(".title").css({
         "margin-top": "10px"
@@ -149,7 +150,7 @@ $(function() {
       });
       $(".mainIndexBody").css({
         height: "110px",
-        display: "block"
+        "display": "block"
       });
       $(".title").css({
         "margin-top": "10px"
@@ -190,7 +191,7 @@ $(function() {
       $("#astroWindowIndex").hide();
       $(".mainIndexBody").css({
         height: "110px",
-        display: "block"
+        "display": "block"
       });
       $(".title").css({
         "margin-top": "10px"
