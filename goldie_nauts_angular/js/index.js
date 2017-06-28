@@ -128,7 +128,7 @@ $(function() {
       });
       $(".mainIndexBody").css({
         height: "110px",
-        "display": "block"
+        "display": ""
       });
       $(".title").css({
         "margin-top": "10px"
@@ -150,7 +150,7 @@ $(function() {
       });
       $(".mainIndexBody").css({
         height: "110px",
-        "display": "block"
+        "display": ""
       });
       $(".title").css({
         "margin-top": "10px"
@@ -191,7 +191,7 @@ $(function() {
       $("#astroWindowIndex").hide();
       $(".mainIndexBody").css({
         height: "110px",
-        "display": "block"
+        "display": ""
       });
       $(".title").css({
         "margin-top": "10px"
