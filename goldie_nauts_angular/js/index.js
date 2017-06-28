@@ -128,7 +128,7 @@ $(function() {
       });
       $(".mainIndexBody").css({
         height: "110px",
-        "display": "block"
+        display: "block"
       });
       $(".title").css({
         "margin-top": "10px"
