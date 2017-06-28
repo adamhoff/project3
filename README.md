@@ -1,9 +1,9 @@
 # GOLDIE NAUTS - Project 3
 https://adamhoff.github.io/project3/
 ### Group Members
-Adam Hoff: https://adamhoff.github.io/portfolio/
-Jeong Hoon Koo: http://www.jkoo87.com/
-Stormy Ramsey: https://stormyramsey.github.io/
+* Adam Hoff: https://adamhoff.github.io/portfolio/
+* Jeong Hoon Koo: http://www.jkoo87.com/
+* Stormy Ramsey: https://stormyramsey.github.io/
 
 ### Planning and User Story
 
