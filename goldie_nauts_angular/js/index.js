@@ -4,7 +4,7 @@ $(function() {
   if (window.location.pathname == "/project3/" || window.location.pathname === "/project3") {
     $(".mainIndexBody").css({
       height: "100vh",
-      "display": "flex"
+      display: "flex"
     });
     $(".title").css({
       "margin-top": "100px"
@@ -12,7 +12,7 @@ $(function() {
   } else {
     $(".mainIndexBody").css({
       height: "110px",
-      "display": "block"
+      display: "block"
     });
     $(".title").css({
       "margin-top": "10px"
@@ -45,7 +45,7 @@ $(function() {
     }, "slow");
     $(".mainIndexBody").css({
       height: "100vh",
-      "display": "flex"
+      display: "flex"
     });
     $(".title").css({
       "margin-top": "100px"
@@ -127,7 +127,8 @@ $(function() {
         filter: ""
       });
       $(".mainIndexBody").css({
-        height: "110px"
+        height: "110px",
+        "display": "block"
       });
       $(".title").css({
         "margin-top": "10px"
@@ -135,12 +136,6 @@ $(function() {
       $(".star, .galaxy").show();
       window.location.href = "#/planet";
     }, 1600);
-    setTimeout(function() {
-      $(".mainIndexBody").css({
-        "display": ""
-      });
-    }, 1700);
-
   });
 
   $("#apodMainIndex").click(function() {
@@ -154,18 +149,14 @@ $(function() {
         filter: ""
       });
       $(".mainIndexBody").css({
-        height: "110px"
+        height: "110px",
+        display: "block"
       });
       $(".title").css({
         "margin-top": "10px"
       });
       window.location.href = "#/apod/";
     }, 1600);
-    setTimeout(function() {
-      $(".mainIndexBody").css({
-        "display": ""
-      });
-    }, 1700);
   });
 
   //Hide menu(re-adjust css attributes including hover) and re-direct the page on click "astromenu"
@@ -199,17 +190,13 @@ $(function() {
       });
       $("#astroWindowIndex").hide();
       $(".mainIndexBody").css({
-        height: "110px"
+        height: "110px",
+        display: "block"
       });
       $(".title").css({
         "margin-top": "10px"
       });
       window.location.href = "#/astro";
     }, 6000);
-    setTimeout(function() {
-      $(".mainIndexBody").css({
-        "display": ""
-      });
-    }, 6500);
   })
 });
