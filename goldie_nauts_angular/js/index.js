@@ -11,7 +11,7 @@ $(function() {
     });
   } else {
     $(".mainIndexBody").css({
-      "display": "block",
+      "display": "",
       "height": "110px"
     });
     $(".title").css({
@@ -128,7 +128,7 @@ $(function() {
       });
       $(".mainIndexBody").css({
         "height": "110px",
-        "display": "block"
+        "display": ""
       });
       $(".title").css({
         "margin-top": "10px"
@@ -149,7 +149,7 @@ $(function() {
         filter: ""
       });
       $(".mainIndexBody").css({
-        "display": "block",
+        "display": "",
         "height": "110px"
       });
       $(".title").css({
@@ -190,7 +190,7 @@ $(function() {
       });
       $("#astroWindowIndex").hide();
       $(".mainIndexBody").css({
-        "display": "block",
+        "display": "",
         "height": "110px"
       });
       $(".title").css({
