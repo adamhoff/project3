@@ -37,7 +37,7 @@ body {
   background: url("../background/background.png")no-repeat center;
   background-size: cover;
   height: 100vh;
-  display: flex;
+  /*display: flex;*/
   flex-direction: column;
   justify-content: center;
   position: relative;
