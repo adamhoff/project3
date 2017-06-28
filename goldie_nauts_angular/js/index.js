@@ -3,8 +3,7 @@ $(function() {
   //Resize the background and title of th main index page
   if (window.location.pathname == "/project3/" || window.location.pathname === "/project3") {
     $(".mainIndexBody").css({
-      height: "100vh",
-      "display": "flex"
+      height: "100vh"
     });
     $(".title").css({
       "margin-top": "100px"
