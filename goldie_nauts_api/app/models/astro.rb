@@ -1,2 +1,0 @@
-class Astro < ApplicationRecord
-end
