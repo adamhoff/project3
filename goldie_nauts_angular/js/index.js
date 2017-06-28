@@ -127,8 +127,7 @@ $(function() {
         filter: ""
       });
       $(".mainIndexBody").css({
-        height: "110px",
-        "display": ""
+        height: "110px"
       });
       $(".title").css({
         "margin-top": "10px"
@@ -136,6 +135,12 @@ $(function() {
       $(".star, .galaxy").show();
       window.location.href = "#/planet";
     }, 1600);
+    setTimeout(function() {
+      $(".mainIndexBody").css({
+        "display": ""
+      });
+    }, 1700);
+
   });
 
   $("#apodMainIndex").click(function() {
@@ -149,14 +154,18 @@ $(function() {
         filter: ""
       });
       $(".mainIndexBody").css({
-        height: "110px",
-        "display": ""
+        height: "110px"
       });
       $(".title").css({
         "margin-top": "10px"
       });
       window.location.href = "#/apod/";
     }, 1600);
+    setTimeout(function() {
+      $(".mainIndexBody").css({
+        "display": ""
+      });
+    }, 1700);
   });
 
   //Hide menu(re-adjust css attributes including hover) and re-direct the page on click "astromenu"
@@ -190,13 +199,17 @@ $(function() {
       });
       $("#astroWindowIndex").hide();
       $(".mainIndexBody").css({
-        height: "110px",
-        "display": ""
+        height: "110px"
       });
       $(".title").css({
         "margin-top": "10px"
       });
       window.location.href = "#/astro";
     }, 6000);
+    setTimeout(function() {
+      $(".mainIndexBody").css({
+        "display": ""
+      });
+    }, 6500);
   })
 });
