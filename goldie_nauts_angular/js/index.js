@@ -3,7 +3,7 @@ $(function() {
   //Resize the background and title of th main index page
   if (window.location.pathname == "/project3/" || window.location.pathname === "/project3") {
     $(".mainIndexBody").css({
-      height: "100vh",
+      "height": "100vh",
       "display": "flex"
     });
     $(".title").css({
@@ -12,7 +12,7 @@ $(function() {
   } else {
     $(".mainIndexBody").css({
       "display": "block",
-      height: "110px"
+      "height": "110px"
     });
     $(".title").css({
       "margin-top": "10px"
@@ -44,7 +44,7 @@ $(function() {
       scrollTop: 0
     }, "slow");
     $(".mainIndexBody").css({
-      height: "100vh",
+      "height": "100vh",
       "display": "flex"
     });
     $(".title").css({
@@ -127,7 +127,7 @@ $(function() {
         filter: ""
       });
       $(".mainIndexBody").css({
-        height: "110px",
+        "height": "110px",
         "display": "block"
       });
       $(".title").css({
@@ -150,7 +150,7 @@ $(function() {
       });
       $(".mainIndexBody").css({
         "display": "block",
-        height: "110px"
+        "height": "110px"
       });
       $(".title").css({
         "margin-top": "10px"
@@ -191,7 +191,7 @@ $(function() {
       $("#astroWindowIndex").hide();
       $(".mainIndexBody").css({
         "display": "block",
-        height: "110px"
+        "height": "110px"
       });
       $(".title").css({
         "margin-top": "10px"
