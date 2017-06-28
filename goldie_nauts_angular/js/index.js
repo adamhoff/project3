@@ -191,7 +191,7 @@ $(function() {
       $("#astroWindowIndex").hide();
       $(".mainIndexBody").css({
         "display": "block",
-        "height": "110px"
+        "height": "300px"
       });
       $(".title").css({
         "margin-top": "10px"
