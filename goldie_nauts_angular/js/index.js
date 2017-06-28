@@ -44,7 +44,7 @@ $(function() {
     }, "slow");
     $(".mainIndexBody").css({
       height: "100vh",
-      display: "flex"
+      // display: "flex"
     });
     $(".title").css({
       "margin-top": "100px"

@@ -34,7 +34,7 @@ body {
 }
 
 .mainIndexBody {
-  display: flex;
+  /*display: flex;*/
   background: url("../background/background.png")no-repeat center;
   background-size: cover;
   height: 100vh;
