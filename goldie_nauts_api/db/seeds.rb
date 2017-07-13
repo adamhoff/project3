@@ -102,7 +102,7 @@ saturn = Planet.create({
 
   astro1 = Astro.create({
   	name: "Joseph M. Acaba",
-  	photo_url: "https://www.nasa.gov/sites/default/files/thumbnails/image/acaba_joseph_m.jpg",
+  	photo_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Joseph_Acaba_v2.jpg/220px-Joseph_Acaba_v2.jpg",
   	bio: "Born in 1967 in Inglewood, California, and raised in Anaheim, California, where his parents,
   		Ralph and Elsie, still reside. Enjoys outdoor activities, such as camping, hiking, biking,
   		kayaking and scuba diving.",
